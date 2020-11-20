@@ -8,14 +8,15 @@ import java.util.Scanner;
 /**
  * You are advised against modifying this class.
  */
-public final class Console {
+public final class Input {
     private final Scanner input;
     private final PrintStream output;
 
-    public Console(InputStream in, PrintStream out) {
+    public Input(InputStream in, PrintStream out) {
         this.input = new Scanner(in);
         this.output = out;
     }
+
 
     public void print(String val, Object... args) {
         output.format(val, args);
@@ -26,7 +27,7 @@ public final class Console {
     }
 
     public String getStringInput(String prompt, Object... args) {
-        println(prompt, args);
+        print(prompt, args);
         return input.nextLine();
     }
 

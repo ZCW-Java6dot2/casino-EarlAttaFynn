@@ -1,8 +1,12 @@
 package io.zipcoder.casino;
 
 
+import io.zipcoder.casino.utilities.Switchboard;
+
 public class Casino {
     public static void main(String[] args) {
-        // write your tests before you start
+        Switchboard switchboard = new Switchboard();
+
+        switchboard.runMenu();
     }
 }
