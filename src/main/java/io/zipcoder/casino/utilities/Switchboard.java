@@ -71,7 +71,10 @@ public class Switchboard {
                     break;
                 case 2:
                     GoFishPlayer goFishPlayer = new GoFishPlayer(currentPlayer);
-                    //GoFish goFish = new GoFish(goFishPlayer);
+                    GoFish goFish = new GoFish(goFishPlayer);
+                    while (!goFish.playGame()) {
+                        goFish.playGame();
+                    }
                     break;
                 case 3:
                     ChoHanPlayer choHanPlayer = new ChoHanPlayer(currentPlayer);
