@@ -27,8 +27,9 @@ public class BlackJackPlayer implements GamblingPlayerInterface{
 
     public void setWallet(double amount) {
         this.wallet = amount;
+        player.setWallet(amount);
     }
-
+//
 
     public double placeBet() {
         return 0;
